@@ -1,0 +1,29 @@
+pipeline {
+    agent any
+
+    stages {
+         stage('cm checkout') {
+            steps {
+            echo 'GET FROM GITHUB'
+                echo 'cm checkout complet'
+            }
+        }
+        
+        stage('build') {
+            steps {
+                echo 'build World'
+            }
+        }
+        
+         stage('test') {
+            steps {
+          echo 'date'
+            }
+        }
+         stage('deplay') {
+            steps {
+                echo 'date'
+            }
+        }
+    }
+}
